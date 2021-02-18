@@ -1,5 +1,5 @@
 {
-  "name": "@datareachable/qfvalidation",
+  "name": "@datareachable/dr_front_qfvalidation",
   "version": "0.0.1",
   "description": "dr form validation",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datareachable/dr_qfvalidation.git"
+    "url": "git+https://github.com/dataReachable/dr_Front_Qfvalidation.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/datareachable/dr_qfvalidation/issues"
+    "url": "https://github.com/datareachable/dr_Front_Qfvalidation/issues"
   },
-  "homepage": "https://github.com/datareachable/dr_qfvalidation#readme"
+  "homepage": "https://github.com/datareachable/dr_Front_Qfvalidation#readme"
 }
