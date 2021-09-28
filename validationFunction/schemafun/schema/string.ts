@@ -10,8 +10,8 @@
  * @param {string} value the value will be checked
  */
 export const stringType = (value: string): boolean => {
-  const string: RegExp = /^[A-Za-z]+$/;
-  return string.test(value);
+    const string: RegExp = /^[A-Za-z]+$/;
+    return string.test(value);
 };
 
 /**
@@ -20,11 +20,11 @@ export const stringType = (value: string): boolean => {
  * @param {number} length the min length of the min length validation
  */
 export const stringMinLength = (value: string, length: number): boolean => {
-  if (value.length > length) {
-    return true;
-  } else {
-    return false;
-  }
+    if (value.length > length) {
+        return true;
+    } else {
+        return false;
+    }
 };
 
 /**
@@ -33,11 +33,11 @@ export const stringMinLength = (value: string, length: number): boolean => {
  * @param {number} length the max length of the max length validation
  */
 export const stringMaxLength = (value: string, length: number): boolean => {
-  if (value.length < length) {
-    return true;
-  } else {
-    return false;
-  }
+    if (value.length < length) {
+        return true;
+    } else {
+        return false;
+    }
 };
 
 /**
@@ -45,8 +45,8 @@ export const stringMaxLength = (value: string, length: number): boolean => {
  * @param {string} value the value will be checked
  */
 export const stringLowerCase = (value: string): boolean => {
-  const lowerCaseRegExp: RegExp = /^[a-z]+$/;
-  return lowerCaseRegExp.test(value);
+    const lowerCaseRegExp: RegExp = /^[a-z]+$/;
+    return lowerCaseRegExp.test(value);
 };
 
 /**
@@ -54,8 +54,8 @@ export const stringLowerCase = (value: string): boolean => {
  * @param {string} value the value will be checked
  */
 export const stringUpperCase = (value: string): boolean => {
-  const upperCaseRegExp: RegExp = /^[A-Z]+$/;
-  return upperCaseRegExp.test(value);
+    const upperCaseRegExp: RegExp = /^[A-Z]+$/;
+    return upperCaseRegExp.test(value);
 };
 
 /**
@@ -63,8 +63,8 @@ export const stringUpperCase = (value: string): boolean => {
  * @param {string} value the value will be checked
  */
 export const stringEmail = (value: string): boolean => {
-  const emailRegExp: RegExp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  return emailRegExp.test(value);
+    const emailRegExp: RegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    return emailRegExp.test(value);
 };
 
 /**
@@ -72,5 +72,5 @@ export const stringEmail = (value: string): boolean => {
  * @param {string} value the value will be checked
  */
 export const stringMix = (value: string, match: RegExp): boolean => {
-  return match.test(value);
+    return match.test(value);
 };
